@@ -1,0 +1,29 @@
+.menu-icon {
+    span {
+        font-size: 24px;
+        text-transform: uppercase;
+        display: flex;
+        align-items: center;
+        a {
+            display: inline-block;
+            font-size: 20px;
+            padding: 24px 24px;
+            padding: 20px 24px 19px;
+            line-height: 1;
+            margin-right: 20px;
+            &:hover {
+                background-color: $theme-color;
+                color: #fff;
+                border: 2px solid $theme-color;
+            }
+        }
+    }
+    &.menu-icon-hm17 {
+        span {
+            a {
+                border: 1px solid rgba(0,0,0,0.1);
+                padding: 31px 31px 30px;
+            }
+        }
+    }
+}
