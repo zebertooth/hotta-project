@@ -1,0 +1,918 @@
+<!doctype html>
+<html class="no-js" lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>HTML Template demo</title>
+    <meta name="robots" content="noindex, follow" />
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Favicon -->
+    <link rel="shortcut icon" type="image/x-icon" href="assets/images/favicon.png">
+
+    <!-- All CSS is here
+	============================================ -->
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="assets/css/vendor/bootstrap.min.css">
+    <!-- Icon Font CSS -->
+    <link rel="stylesheet" href="assets/css/vendor/font-awesome.css">
+    <link rel="stylesheet" href="assets/css/vendor/dlicon.css">
+    <!-- Others CSS -->
+    <link rel="stylesheet" href="assets/css/plugins/owl-carousel.css">
+    <link rel="stylesheet" href="assets/css/plugins/slick.css">
+    <link rel="stylesheet" href="assets/css/plugins/magnific-popup.css">
+    <link rel="stylesheet" href="assets/css/plugins/jarallax.css">
+    <link rel="stylesheet" href="assets/css/plugins/easyzoom.css">
+    <link rel="stylesheet" href="assets/css/plugins/animate.css">
+    <link rel="stylesheet" href="assets/css/plugins/fullpage.css">
+    <link rel="stylesheet" href="assets/css/plugins/jquery-ui.css">
+    <link rel="stylesheet" href="assets/css/plugins/select2.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/vendor/custom.css">
+<style>
+    html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+    .img100{
+        width: 100%;
+        text-align: center;
+    }
+    .title-responsive {
+        width: 25%;
+        text-align: center;
+    }
+    @media screen and (max-width: 768px) {
+
+        .title-responsive {
+        width: 100%;
+        text-align: center;
+    }
+}
+    .font-black{
+    color: black!important;
+    }
+    .pb-100{
+        padding-top: 0px;
+        padding-bottom: 0px;
+    }
+    .section-padding-6 .container-fluid {
+        padding: 0px;
+    }
+    .section-padding-7 .container-fluid {
+        padding-top: 65px;
+
+
+    }
+
+
+    .scrolling-wrapper{
+	overflow-x: auto;
+}
+.card-block{
+	height: 250px;
+	background-color: #fff;
+	border: none;
+	background-position: center;
+	background-size: cover;
+	transition: all 0.2s ease-in-out !important;
+	border-radius: 24px;
+}
+
+
+.content-desktop {display: flex;}
+.content-mobile {display: none;}
+
+@media screen and (max-width: 768px) {
+
+.content-desktop {display: none;}
+.content-mobile {display: flex;}
+
+}
+
+.btn-outline {
+    color: #FF8F1C;
+    border-color: #FF8F1C;
+}
+.social-icon {
+    color: white!important;
+    background: #FF8F1C;
+    padding: 7px 8px 2px 8px;
+}
+.social-icon a {
+    color: white!important;
+}
+
+.float-left {
+    float: left;
+}
+.footer-margin {
+    margin-top: 5%;
+    font-size: 30px;
+    color: #ffffff;
+}
+.footer-margin  a {
+    color: #ffffff !important;
+}
+.btn-style-5 {
+    font-size: 35px;
+    border: solid 1px orange;
+    padding: 17px;
+    text-align: center;
+}
+
+</style>
+<script>
+    $(function () {
+  $(document).scroll(function () {
+	  var $nav = $(".navbar-fixed-top");
+	  $nav.toggleClass('scrolled', $(this).scrollTop() > $nav.height());
+	});
+});
+</script>
+</head>
+
+<body>
+
+    <div class="main-wrapper">
+        <!-- Pre Loader -->
+        <div class="preloader">
+            <div class="loading-center">
+                <div class="loading-center-absolute">
+                    <div class="object object_one"></div>
+                    <div class="object object_two"></div>
+                    <div class="object object_three"></div>
+                </div>
+            </div>
+        </div>
+        <header class="header-area section-padding-1 pt-45 pb-4">
+            <div class="container-fluid">
+                <div class="row align-items-center">
+                    <div class="col-xl-4 col-lg-2">
+                        <div class="menu-icon">
+                            <span>
+                            <a class="clickable-mainmenu-button" href="#"><i class="dlicon ui-3_menu-left"></i></a>
+                        </span>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-lg-8">
+                        <div class="logo logo-width text-center">
+                            <a href="index.html">
+                                <img src="assets/images/logo/Mask Group 83.png" alt="logo">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-lg-2">
+                        <div class="header-right-wrap header-right-flex">
+                            <div class="same-style header-wishlist social-icon">
+                                <a href="#"><i class="fa fa-facebook"></i></a>
+                            </div>
+                            <div class="same-style header-wishlist social-icon">
+                                <a href="#"><i class="fa fa-instagram"></i></a>
+                            </div>
+                            <div class="same-style header-wishlist social-icon">
+                                <a href="#"><i class="fa fa-youtube-square"></i></a>
+                            </div>
+                            <div class="same-style header-wishlist social-icon">
+                                <a href="#"><i class="fa fa-twitter-square"></i></a>
+                            </div>
+                            <div class="same-style header-wishlist dropdown">
+                                    <a class="btn btn-outline dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        TH
+                                      </a>
+                                <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                                    <a class="dropdown-item" href="#">TH</a>
+                                    <a class="dropdown-item" href="#">EN</a>
+                                </div>
+                            </div>
+                            <div class="same-style header-wishlist dropdown">
+                                <a class="btn btn-outline dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" href="#"><i class="fa fa-shopping-cart"><span style="font-family: PSL-Kittithada, sans-serif;"> ONLINE SHOP</span></i></a>
+                                <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                                    <a class="dropdown-item" href="#">LAZADA</a>
+                                    <a class="dropdown-item" href="#">SHOPEE</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <div class="header-small-mobile section-padding-1">
+            <div class="container-fluid">
+                <div class="row align-items-center">
+                    <div class="col-4">
+                        <div class="same-style header-search">
+                            <a class="search-active" href="#">
+                                <i class="dlicon ui-1_zoom" style="font-size: 30px;"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="mobile-logo logo-width center">
+                            <a href="index.html">
+                                <img alt="" src="assets/images/logo/Mask Group 83.png">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="mobile-header-right-wrap">
+                            <div class="header-right-wrap header-right-flex">
+                                <div class="same-style header-off-canvas">
+                                    <a class="header-aside-button" href="#">
+                                        <i class="dlicon ui-3_menu-left" style="font-size: 30px;"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- aside start -->
+        <div class="header-aside-active">
+            <div class="header-aside-wrap">
+                <a class="aside-close"><i class="dlicon ui-1_simple-remove"></i></a>
+                <div class="header-aside-content">
+                    <div class="mobile-menu-area">
+                        <div class="mobile-menu-wrap">
+                            <!-- mobile menu start -->
+                            <div class="mobile-navigation">
+                                <!-- mobile menu navigation start -->
+                                <nav>
+                                    <ul class="mobile-menu">
+                                        <li><a href="shop-instagram.html">I AM FUSION </a></li>
+                                        <li><a href="shop-instagram.html">FUSION DRINK </a></li>
+                                        <li><a href="shop-instagram.html">FIND FUSION </a></li>
+                                        <li><a href="shop-instagram.html">FUSION TREND </a></li>
+                                        <li class="menu-item-has-children "><a href="blog.html">FUSION NEWS</a>
+                                            <ul class="dropdown">
+                                                <li><a href="blog.html">Blog Style 01</a></li>
+                                                <li><a href="blog-2.html">Blog Style 02</a></li>
+                                                <li><a href="blog-3.html">Blog Style 03</a></li>
+                                                <li><a href="#">Single Post Style 01</a></li>
+                                            </ul>
+                                        </li>
+                                        <li class="menu-item-has-children "><a href="blog.html">CONTACT FUSION</a>
+                                            <ul class="dropdown">
+                                                <li><a href="blog.html">Blog Style 01</a></li>
+                                                <li><a href="blog-2.html">Blog Style 02</a></li>
+                                                <li><a href="blog-3.html">Blog Style 03</a></li>
+                                                <li><a href="#">Single Post Style 01</a></li>
+                                                <li><a href="blog-details-2.html">Single Post Style 02</a></li>
+                                            </ul>
+                                        </li>
+                                        <li class="menu-item-has-children "><a href="blog.html">ONLINE SHOP</a>
+                                            <ul class="dropdown">
+                                                <li><a href="blog.html">Blog Style 01</a></li>
+                                                <li><a href="blog-2.html">Blog Style 02</a></li>
+                                                <li><a href="blog-3.html">Blog Style 03</a></li>
+                                                <li><a href="#">Single Post Style 01</a></li>
+                                                <li><a href="blog-details-2.html">Single Post Style 02</a></li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </nav>
+                                <!-- mobile menu navigation end -->
+                            </div>
+                            <!-- mobile menu end -->
+                        </div>
+                        <div class="mobile-curr-lang-wrap">
+                            <div class="single-mobile-curr-lang">
+                                <a class="mobile-language-active" href="#">Language <i class="fa fa-angle-down"></i></a>
+                                <div class="lang-curr-dropdown lang-dropdown-active">
+                                    <ul>
+                                        <li><a href="#">English (US)</a></li>
+                                        <li><a href="#">English (UK)</a></li>
+                                        <li><a href="#">Spanish</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="social-icon-style mb-25 center">
+                        <a class="facebook" href="#"><i class="fa fa-facebook"></i></a>
+                        <a class="twitter" href="#"><i class="fa fa-twitter"></i></a>
+                        <a class="google-plus" href="#"><i class="fa fa-google-plus"></i></a>
+                        <a class="behance" href="#"><i class="fa fa-behance"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="clickable-mainmenu-active">
+            <div class="clickable-mainmenu-width">
+                <a class="mainmenu-close"><i class="dlicon ui-1_simple-remove"></i></a>
+                <div class="clickable-mainmenu-wrap clickable-mainmenu-style"><!--style="background-image: url('assets/material/Group 2262.png'); background-repeat: no-repeat;"-->
+                    <nav>
+                        <ul>
+                            <li class="has-sub-menu"><a href="#"></a>
+                                <ul class="sub-menu">
+                                    <li><a href="#">I AM FUSION</a></li>
+                                    <li><a href="#">FUSION DRINK</a></li>
+                                    <li><a href="#">FIND FUSION</a></li>
+                                </ul>
+                            </li>
+                            <li class="has-sub-menu"><a href="#"></a>
+                                <ul class="sub-menu">
+                                    <li class="has-sub-menu"><a href="#">FUSION TREND</a>
+                                    </li>
+                                    <li class="has-sub-menu"><a href="#">FUSION NEWS</a>
+                                        <ul class="sub-menu">
+                                            <li><a href="#">VIDEO</a></li>
+                                            <li><a href="#">NEWS</a></li>
+                                            <li><a href="#">ACTIVITY</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="has-sub-menu"><a href="#">CONTACT FUSION</a>
+                                        <ul class="sub-menu black">
+                                            <li><a href="#">CONTACT FORM</a></li>
+                                            <li><a href="#">FAQS</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+        <div class="slider-area">
+            <div class="container-fluid p-0">
+                <div class="main-slider-active-3 owl-carousel slider-dot-position-3 slider-dot-style-2">
+                    <div class="single-main-slider slider-animated-1 slider-height-hm5 align-items-center custom-d-flex bg-black-6" data-dot="01">
+                        <div class="img-position-hm5-1-1">
+                            <img class="animated" src="assets/material/Group 2184@2x.png" >
+                            <h1></h1>
+                        </div>
+                        <div class="img-position-hm5-1-2">
+                            <img class="animated" src="assets/material/Mask Group 1418@2x.png" alt="slider">
+                        </div>
+                        <div class="row no-gutters width-100-percent">
+                            <div class="col-lg-6 col-md-7">
+                                <div class="main-slider-content-hm5-1 slider-content-hm5-mrg1 text-center">
+                                    <h1 class="animated"><img src="assets/material/Group 2263.png" alt="erer"></a></h1>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="single-main-slider slider-animated-1 slider-height-hm5 align-items-center custom-d-flex bg-black-6" data-dot="02">
+                        <div class="img-position-hm5-1-1">
+                            <img class="animated" src="assets/material/Group 2184@2x.png" >
+                            <h1></h1>
+                        </div>
+                        <div class="img-position-hm5-1-2">
+                            <img class="animated" src="assets/material/Mask Group 1418@2x.png" alt="slider">
+                        </div>
+                        <div class="row no-gutters width-100-percent">
+                            <div class="col-lg-6 col-md-7">
+                                <div class="main-slider-content-hm5-1 slider-content-hm5-mrg1 text-center">
+                                    <h1 class="animated"><img src="assets/material/Group 2263.png" alt="erer"></a></h1>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    <section id="video">
+        <div class="video-area jarallax-height">
+            <div class="container-fluid p-0 bg-light-blue">
+                <div class="video-content text-center" style="background-image: url('assets/material/Group 2263@2x.png'); background-repeat: no-repeat; background-size:cover; background-position:center;">
+                    <h1>&nbsp</h1>
+                    <h1>&nbsp</h1>
+                    <h1>&nbsp</h1>
+                    <h1> <a class="video-popup" href="https://youtu.be/BY4af225dpo?autoplay=1"><img src="assets/material/Group 1311@2x.png" alt=""></a></h1>
+                    <h1>&nbsp</h1>
+                    <div class="video-btn">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="testimonial">
+        <div class="section-title-4 mb-70 text-center overflow">
+            <h1> <a><img class="title-responsive" src="assets/material/front-end/reason/Group 2266@2x.png" alt=""></a></h1>
+        </div>
+        <div class="scrolling-wrapper row flex-row flex-nowrap content-desktop">	
+            <div class="col-4">
+                <div class="product-wrap mb-40">
+                    <div class="mb-25">
+                        <a href="#">
+                            <img class="img100" src="assets/material/front-end/reason/fusionleft2x.png" alt="">
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-4">
+                <div class="product-wrap mb-40">
+                    <div class="mb-25">
+                        <a href="#">
+                            <img class="img100" src="assets/material/front-end/reason/fusioncenter@2x.png" alt="">
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-4">
+                <div class="product-wrap mb-40">
+                    <div class="mb-25">
+                        <a href="#">
+                            <img class="img100" src="assets/material/front-end/reason/fusioncright@2x.png" alt="">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="scrolling-wrapper row flex-row flex-nowrap content-mobile">		
+            <div class="col-12">
+                <div class="product-wrap mb-60">
+                    <div class="mb-25">
+                        <a href="#">
+                            <img class="img100" src="assets/material/front-end/reason/fusionleft2x.png" alt="">
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12">
+                <div class="product-wrap mb-60">
+                    <div class="mb-25">
+                        <a href="#">
+                            <img class="img100" src="assets/material/front-end/reason/fusioncenter@2x.png" alt="">
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12">
+                <div class="product-wrap mb-60">
+                    <div class="mb-25">
+                        <a href="#">
+                            <img class="img100" src="assets/material/front-end/reason/fusioncright@2x.png" alt="">
+                        </a>
+                    </div>
+                </div>
+            </div>
+    </div>
+    <div class="text-center" style="padding-top:70px; color: chocolate;">
+        <a class="btn-border" href="#.html">
+            <div class="btn-viewmore-normal btn-ptb-2 btn-viewmore-common " style="color: coral;">
+                <span class="btn-style-5">ดูสินค้าทั้งหมด</span>
+            </div>
+        </a>
+    </div>
+    </section>
+    <section style="background-image: url('assets/material/front-end/reason/Group\ 2261@2x.png'); background-repeat: no-repeat; background-size:cover; background-position:top;height: auto;">
+        <div class="container-fluid" >
+            <h1>&nbsp</h1>
+            <h1>&nbsp</h1>
+            <h1>&nbsp</h1>
+            <div class="section-title-4 mb-70 text-center overflow">
+                <h1> <a><img class="title-responsive" src="assets/material/front-end/reason/Group 2263@2x.png" alt=""></a></h1>
+            </div>
+            <div class="scrolling-wrapper row flex-row flex-nowrap content-desktop">	
+                    <div class="col-4">
+                        <div class="product-wrap mb-40">
+                            <div class="mb-25">
+                                <a href="#">
+                                    <img class="img100" src="assets/material/front-end/reason/left@2x.png" alt="">
+                                </a>
+                            </div>
+                        </div>
+			        </div>
+			        <div class="col-4">
+                        <div class="product-wrap mb-40">
+                            <div class="mb-25">
+                                <a href="#">
+                                    <img class="img100" src="assets/material/front-end/reason/center@2x.png" alt="">
+                                </a>
+                            </div>
+                        </div>
+			        </div>
+			        <div class="col-4">
+                        <div class="product-wrap mb-40">
+                            <div class="mb-25">
+                                <a href="#">
+                                    <img class="img100" src="assets/material/front-end/reason/right@2x.png" alt="">
+                                </a>
+                            </div>
+                        </div>
+			        </div>
+            </div>
+            <div class="scrolling-wrapper row flex-row flex-nowrap content-mobile" style="background-image: url('assets/material/front-end/reason/Group 3057.png'); background-repeat: no-repeat; background-size:cover; background-position:center; height: 400px;">		
+                <div class="col-8">
+                    <div class="product-wrap mb-60">
+                        <div class="mb-25">
+                            <a href="#">
+                                <img class="img100" src="assets/material/front-end/reason/left@2x.png" alt="">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-8">
+                    <div class="product-wrap mb-60">
+                        <div class="mb-25">
+                            <a href="#">
+                                <img class="img100" src="assets/material/front-end/reason/center@2x.png" alt="">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-8">
+                    <div class="product-wrap mb-60">
+                        <div class="mb-25">
+                            <a href="#">
+                                <img class="img100" src="assets/material/front-end/reason/right@2x.png" alt="">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+        </div>
+        </div>
+    </section>
+    <section id="product">
+        <div class="product-area section-padding-4 padding-120-row-col pt-125 pb-115" >
+            <div class="container-fluid">
+                <div class="section-title-4 mb-70 text-center overflow">
+                    <h1> <a><img src="assets/material/front-end/Group 2263.png" alt=""></a></h1>
+                    <h2 class="font-overlay">ฮอทต้า ฟิวชั่น สไตล์ใหม่ ดื่มได้ทุกเวลา</h2>
+                </div>
+                <div class="row" style="margin-top:-380px">
+                    <div class="col-lg-4">
+                        <div class="product-wrap mb-60">
+                            <div class="product-img default-overlay mb-25">
+                                <a href="#">
+                                    <img class="default-img" src="assets/material/front-end/Component 21 – 1@2x.png" alt="">
+                                    <img class="hover-img" src="assets/material/front-end/reason/01left.png" alt="">
+                                </a>
+                                <div class="product-action product-action-position-1">
+                                    <a data-toggle="modal" data-target="#exampleModal" href="#"><i class="fa fa-plus-circle"></i><span>ดูรายละเอียด</span></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="product-wrap mb-60">
+                            <div class="product-img default-overlay mb-25">
+                                <a href="#">
+                                    <img class="default-img" src="assets/material/front-end/Component 26 – 1@2x.png" alt="">
+                                    <img class="hover-img" src="assets/material/front-end/reason/center_cup.png" alt="">
+                                </a>
+                                <div class="product-action product-action-position-1">
+                                    <a data-toggle="modal" data-target="#exampleModal" href="#"><i class="fa fa-plus-circle"></i><span>ดูรายละเอียด</span></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="product-wrap mb-60">
+                            <div class="product-img default-overlay mb-25">
+                                <a href="#">
+                                    <img class="default-img" src="assets/material/front-end/Component 27 – 1@2x.png" alt="">
+                                    <img class="hover-img" src="assets/material/front-end/reason/right_cup.png" alt="">
+                                </a>
+                                <div class="product-action product-action-position-1">
+                                    <a data-toggle="modal" data-target="#exampleModal" href="#"><i class="fa fa-plus-circle"></i><span>ดูรายละเอียด</span></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="btn-style-1 text-center" style="margin-top: -179px;z-index: 10;position: relative;">
+                    <a class="btn-border" href="#.html">
+                        <div class="btn-viewmore-normal btn-ptb-1 btn-viewmore-bg-transparent btn-viewmore-common ">
+                            <span>ดูสินค้าทั้งหมด</span>
+                        </div>
+                        <div class="btn-viewmore-hover btn-ptb-1 btn-viewmore-common btn-hover-transition">
+                            <span>ดูสินค้าทั้งหมด</span>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+        <div class="categories-area section-padding-6 pt-100 pb-100">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-lg-3 col-md-6 col-sm-6 flexslide center" style="background-color: #DA291C;" >
+                        <a><img src="assets/material/front-end/Group 2271@2x.png" style="top: 30%;position: relative;; width: 50%;" alt=""></a>
+                    </div>
+                    <div class="col-lg-9 col-md-6 col-sm-6" style="margin: auto;">
+                        <div class="categories-slider-active-2 owl-carousel">
+                            <div class="single-categories-2 text-center">
+                                <div class="">
+                                    <a href="#"><img src="assets/material/front-end/Group 57.png" alt="categories"></a>
+                                </div>
+                            </div>
+                            <div class="single-categories-2 text-center">
+                                <div class="">
+                                    <a href="#"><img src="assets/material/front-end/Group 60@2x.png" alt="categories"></a>
+                                </div>
+                            </div>
+                            <div class="single-categories-2 text-center">
+                                <div class="">
+                                    <a href="#"><img src="assets/material/front-end/Group 61@2x.png" alt="categories"></a>
+                                </div>
+                            </div>
+                            <div class="single-categories-2 text-center">
+                                <div class="">
+                                    <a href="#"><img src="assets/material/front-end/Group 64@2x.png" alt="categories"></a>
+                                </div>
+                            </div>
+                            <div class="single-categories-2 text-center">
+                                <div class="">
+                                    <a href="#"><img src="assets/material/front-end/Group 1299@2x.png" alt="categories"></a>
+                                </div>
+                            </div>
+                            <div class="single-categories-2 text-center">
+                                <div class="">
+                                    <a href="#"><img src="assets/material/front-end/Group 1314.png" alt="categories"></a>
+                                </div>
+                            </div>
+                            <div class="single-categories-2 text-center">
+                                <div class="">
+                                    <a href="#"><img src="assets/material/front-end/Group 61@2x.png" alt="categories"></a>
+                                </div>
+                            </div>
+                            <div class="single-categories-2 text-center">
+                                <div class="">
+                                    <a href="#"><img src="assets/material/front-end/Group 64@2x.png" alt="categories"></a>
+                                </div>
+                            </div>
+                            <div class="single-categories-2 text-center">
+                                <div class="">
+                                    <a href="#"><img src="assets/material/front-end/Group 60@2x.png" alt="categories"></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <section id="instagram" class="bg-gray">
+            <div class="product-area pt-100 pb-130" style="background-image: url('assets/material/front-end/aaz2259.png'); background-repeat: no-repeat; background-size:cover; background-position:center;">
+                <div class="container-fluid p-0">
+                    <div class="section-title text-center mb-70" >
+                        <h2> <a><img src="assets/material/front-end/Group 2260.png" alt=""></a></h2>
+                            <h2 class="font-overlay">สนุกได้ ทุกเวลา กับ ฮอทต้า ฟิวชั่น</h2>
+                            <a><img src="assets/material/front-end/reason/insta_top.png" width="21%" alt=""></a>
+                    </div>
+                </div>
+                <div class="product-slider-active-3 product-slider-padding-2">
+                    <div class="pro-all product-wrap-opacity">
+                        <div class="product-wrap">
+                            <div class="product-img default-overlay mb-40">
+                                <a href="product-details.html">
+                                    <img class="default-img" src="assets/material/front-end/reason/02.png" alt="">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="pro-all product-wrap-opacity">
+                        <div class="product-wrap">
+                            <div class="product-img default-overlay mb-40">
+                                <a href="product-details.html">
+                                    <img class="default-img" src="assets/material/front-end/reason/01.png" alt="">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="pro-all product-wrap-opacity">
+                        <div class="product-wrap">
+                            <div class="product-img default-overlay mb-40">
+                                <a href="product-details.html">
+                                    <img class="default-img" src="assets/material/front-end/reason/03.png" alt="">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="pro-all product-wrap-opacity">
+                        <div class="product-wrap">
+                            <div class="product-img default-overlay mb-40">
+                                <a href="product-details.html">
+                                    <img class="default-img" src="assets/material/front-end/reason/04.png" alt="">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="pro-all product-wrap-opacity">
+                        <div class="product-wrap">
+                            <div class="product-img default-overlay mb-40">
+                                <a href="product-details.html">
+                                    <img class="default-img" src="assets/material/front-end/reason/02.png" alt="">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="pro-all product-wrap-opacity">
+                        <div class="product-wrap">
+                            <div class="product-img default-overlay mb-40">
+                                <a href="product-details.html">
+                                    <img class="default-img" src="assets/material/front-end/reason/01.png" alt="">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="pro-all product-wrap-opacity">
+                        <div class="product-wrap">
+                            <div class="product-img default-overlay mb-40">
+                                <a href="product-details.html">
+                                    <img class="default-img" src="assets/material/front-end/reason/03.png" alt="">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="pro-all product-wrap-opacity">
+                        <div class="product-wrap">
+                            <div class="product-img default-overlay mb-40">
+                                <a href="product-details.html">
+                                    <img class="default-img" src="assets/material/front-end/reason/04.png" alt="">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="pro-all product-wrap-opacity">
+                        <div class="product-wrap">
+                            <div class="product-img default-overlay mb-40">
+                                <a href="product-details.html">
+                                    <img class="default-img" src="assets/material/front-end/reason/02.png" alt="">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="text-center mb-70" style="margin-top: -80px;">
+                        <a><img src="assets/material/front-end/reason/insta_bot.png" width="22%" alt=""></a>
+                </div>
+            </div>
+        </section>
+    <section class="bg-gray">
+        <div class="blog-area section-padding-7 pt-130">
+            <div class="container-fluid">
+                <div class="section-title text-center mb-70">
+                    <h2> <a><img src="assets/material/front-end/Group 2270.png" alt=""></a></h2>
+                        <h2 class="">ฟิวชั่นยังไง ให้ได้มากกว่าที่คิด</h2>
+                </div>
+                <div class="row">
+                    <div class="col-lg-3 col-md-6">
+                        <div class="blog-wrap-2 mb-30 bg-white">
+                            <div class="blog-img-2 mb-50">
+                                <a href="#"><img src="assets/material/front-end/10122020092125img1.png" alt="blog"></a>
+                            </div>
+                            <div class="blog-content-2">
+                                <ul>
+                                    <li><a href="#">TREND</a></li>
+                                </ul>
+                                <h3><a href="#">ฮอทต้า ฟิวชั่น 3 รสชาติ</a></h3>
+                                <div class="blog-meta light-sky-meta">
+                                </div>
+                                <p>ฮอทต้า ฟิวชั่น 3 รสชาติ</p>
+                                <div class="blog-btn-2 blog-btn-2-sky">
+                                    <a href="#">อ่านเพิ่มเติม</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="blog-wrap-2 mb-30 bg-white">
+                            <div class="blog-img-2 mb-50">
+                                <a href="#"><img src="assets/material/front-end/20032017102600topic.png" alt="blog"></a>
+                            </div>
+                            <div class="blog-content-2">
+                                <ul>
+                                    <li><a href="#">TREND</a></li>
+                                </ul>
+                                <h3><a href="#">ฮอทต้า ฟิวชั่น 3 รสชาติ</a></h3>
+                                <div class="blog-meta light-sky-meta">
+                                </div>
+                                <p>ฮอทต้า ฟิวชั่น 3 รสชาติ</p>
+                                <div class="blog-btn-2 blog-btn-2-sky">
+                                    <a href="#">อ่านเพิ่มเติม</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="blog-wrap-2 mb-30 bg-white">
+                            <div class="blog-img-2 mb-50">
+                                <a href="#"><img src="assets/material/front-end/03022017063053topic.png" alt="blog"></a>
+                            </div>
+                            <div class="blog-content-2">
+                                <ul>
+                                    <li><a href="#">TREND</a></li>
+                                </ul>
+                                <h3><a href="#">ฮอทต้า ฟิวชั่น 3 รสชาติ</a></h3>
+                                <div class="blog-meta light-sky-meta">
+                                </div>
+                                <p>ฮอทต้า ฟิวชั่น 3 รสชาติ</p>
+                                <div class="blog-btn-2 blog-btn-2-sky">
+                                    <a href="#">อ่านเพิ่มเติม</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="blog-wrap-2 mb-30 bg-white">
+                            <div class="blog-img-2 mb-50">
+                                <a href="#"><img src="assets/material/front-end/19122016114303topic.png" alt="blog"></a>
+                            </div>
+                            <div class="blog-content-2">
+                                <ul>
+                                    <li><a href="#">TREND</a></li>
+                                </ul>
+                                <h3><a href="#">ฮอทต้า ฟิวชั่น 3 รสชาติ</a></h3>
+                                <div class="blog-meta light-sky-meta">
+                                </div>
+                                <p>ฮอทต้า ฟิวชั่น 3 รสชาติ</p>
+                                <div class="blog-btn-2 blog-btn-2-sky">
+                                    <a href="#">อ่านเพิ่มเติม</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="btn-style-1 text-center" style="padding-bottom: 40px;">
+                    <a class="btn-border" href="blog-3.html">
+                        <div class="btn-viewmore-normal btn-ptb-1 btn-ptb-inc btn-viewmore-common">
+                            <span class="font-black">ดูทั้งหมด</span>
+                        </div>
+                        <div class="btn-viewmore-hover btn-ptb-1 btn-ptb-inc btn-viewmore-common btn-hover-transition btn-hover-black">
+                            <span>ดูทั้งหมด</span>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="blog">
+
+    </section>
+        <footer class="footer-area section-padding-1 footer-botoom">
+            <div class="row text-center justify-content-center">
+                <div class="col-lg-3 col-md-3 box" style="background-color: white;">
+                    <div class="logo logo-width text-center copyright-text">
+                        <a href="index.html">
+                            <img src="assets/images/logo/Mask Group 83.png" alt="logo">
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-3 box" style="background-color: #FF8F1C;">
+                        <div class="footer-margin">
+                            <a style="padding-right: 5px;">สไตล์ใหม่ ดื่มได้ทุกเวลา</a>
+                            <a class="facebook social-icon" href="#"><i class="fa fa-facebook"></i></a>
+                            <a class="twitter social-icon" href="#"><i class="fa fa-twitter"></i></a>
+                            <a class="youtube" href="#"><i class="fa fa-youtube"></i></a>
+                        </div>
+                </div>
+                    <div class="col-lg-3 col-md-3 col-12" style="background-color: #DA291C;">
+                        <div class="footer-margin">
+                            <a href="#">PRIVACY POLICY |</a>
+                            <a href="#">TERM & CONDITIONS </a>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-3 col-12" style="background-color: #DA291C;">
+                        <div class="footer-margin">
+                            <a style="font-size: 15px;" href="#"><img src="assets/material/front-end/reason/Group 2225.png" alt="logo">C 2021 New Concept Product Co.,Ltd.</a>
+                        </div>
+                    </div>
+              </div>
+        </footer>
+    </div>
+
+    <!-- All JS is here
+============================================ -->
+
+    <!-- Modernizer JS -->
+    <script src="assets/js/vendor/modernizr-3.6.0.min.js"></script>
+    <!-- jquery -->
+    <script src="assets/js/vendor/jquery-3.3.1.min.js"></script>
+    <!-- Popper JS -->
+    <script src="assets/js/vendor/popper.js"></script>
+    <!-- Bootstrap JS -->
+    <script src="assets/js/vendor/bootstrap.min.js"></script>
+    <script src="assets/js/plugins/owl-carousel.js"></script>
+    <script src="assets/js/plugins/slick.js"></script>
+    <script src="assets/js/plugins/jarallax.min.js"></script>
+    <script src="assets/js/plugins/countdown.js"></script>
+    <script src="assets/js/plugins/magnific-popup.js"></script>
+    <script src="assets/js/plugins/instafeed.js"></script>
+    <script src="assets/js/plugins/tilt.js"></script>
+    <script src="assets/js/plugins/images-loaded.js"></script>
+    <script src="assets/js/plugins/isotope.js"></script>
+    <script src="assets/js/plugins/scrolloverflow-fullpage.js"></script>
+    <script src="assets/js/plugins/fullpage.js"></script>
+    <script src="assets/js/plugins/jquery-ui-touch-punch.js"></script>
+    <script src="assets/js/plugins/jquery-ui.js"></script>
+    <script src="assets/js/plugins/easyzoom.js"></script>
+    <script src="assets/js/plugins/resizesensor.js"></script>
+    <script src="assets/js/plugins/sticky-sidebar.js"></script>
+    <script src="assets/js/plugins/scrollup.js"></script>
+    <script src="assets/js/plugins/select2.min.js"></script>
+    <script src="assets/js/plugins/cookie.js"></script>
+    <script src="assets/js/plugins/bpopup.js"></script>
+    <script src="assets/js/plugins/wow.js"></script>
+    <script src="assets/js/plugins/ajax-mail.js"></script>
+    <!-- Main JS -->
+    <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>

@@ -6127,7 +6127,7 @@ textarea:focus {
 
 .menu-icon span a {
   display: inline-block;
-  border: 2px solid #FF8F1C;
+  /*border: 2px solid #FF8F1C;*/
   font-size: 20px;
   padding: 24px 24px;
   padding: 20px 24px 19px;
